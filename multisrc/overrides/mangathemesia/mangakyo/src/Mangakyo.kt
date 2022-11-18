@@ -5,7 +5,7 @@ import eu.kanade.tachiyomi.network.interceptor.rateLimit
 import okhttp3.OkHttpClient
 import java.util.concurrent.TimeUnit
 
-class Mangakyo : MangaThemesia("Mangakyo", "https://www.mangakyo.me", "id") {
+class Mangakyo : MangaThemesia("Mangakyo", "https://www.mangakyo.id", "id") {
 
     override val client: OkHttpClient = network.cloudflareClient.newBuilder()
         .connectTimeout(10, TimeUnit.SECONDS)
